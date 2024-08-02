@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3  ##Descargar el codigo fuente
         with:
-          ref: '{{ github.pull_request.head.sha }}' #Descargar el codigo fuente de la rama en especifico
+          ref: '{{ github.event.pull_request.head.sha }}' #Descargar el codigo fuente de la rama en especifico
 
       - name: pull and ceckout from git repository
         run: |
