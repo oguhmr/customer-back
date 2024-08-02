@@ -11,11 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3  ##Descargar el codigo fuente
         with:
-          ref: ${{ github.event.pull_request.head.sha }} ##Descargar el codigo fuente de la rama en especifico
+          ref: ${{ github.event.pull_request.head.sha }} ###Descargar el codigo fuente de la rama en especifico
 
       - name: pull and ceckout from git repository
         run: |
-          |echo "pull and ceckout from git repository"
+          echo "pull and ceckout from git repository"
 
       - name: setup java 17
         uses: actions/setup-java@v3
