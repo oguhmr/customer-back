@@ -9,7 +9,7 @@ jobs:
   build-feature:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3  #Descargar el codigo fuente
+      - uses: actions/checkout@v3  ##Descargar el codigo fuente
         with:
           ref: '{{ github.pull_request.head.sha }}' #Descargar el codigo fuente de la rama en especifico
 
