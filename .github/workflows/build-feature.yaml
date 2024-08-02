@@ -39,7 +39,7 @@ jobs:
 
 #######################################################
 # Automatic merge to develop branch
-#######################################################
+########################################################
   merge-feature-into-develop:
     runs-on: ubuntu-latest
     needs: build-feature
